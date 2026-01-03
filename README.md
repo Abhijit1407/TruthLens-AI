@@ -729,7 +729,8 @@ If you use this work in your research, please cite:
   institution={Northeastern University, College of Professional Studies},
   type={Course Project Report},
   number={EAI6010},
-  note={BERT text classifier: 84.5% accuracy (recall: 83.3%); EfficientNet image classifier: 97.66% accuracy (ROC AUC: 0.9971)}
+  note={BERT text classifier: 84.5% accuracy (recall: 83.3%); EfficientNet image classifier: 97.66% accuracy (ROC AUC: 0.9971)},
+  url={https://github.com/Abhijit1407/TruthLens-AI}
 }
 ```
 
