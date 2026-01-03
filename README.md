@@ -96,7 +96,7 @@ TruthLens-AI/
 │   │   └── 05_TruthLens_Chatbot.ipynb
 │   │
 │   └── image_classification/         # Image analysis pipeline
-│       ├── image_classification.ipynb
+│       └── image_classification.ipynb
 │
 ├── models/                            # Trained model files
 │   ├── text_models/
@@ -109,24 +109,34 @@ TruthLens-AI/
 │
 ├── results/                           # Training and evaluation results
 │   ├── text_classification/
-│   │   ├── eda/                      # Exploratory data analysis
-│   │   ├── baseline/                 # Baseline model results
-│   │   └── bert/                     # BERT model results
+│   │   ├── EDA/                      # Exploratory data analysis
+│   │   │   ├── 01_label_distribution.png
+│   │   │   ├── 02_text_analysis.png
+│   │   │   ├── 03_word_frequency.png
+│   │   │   ├── sample_posts.csv
+│   │   │   └── summary_statistics.csv
+│   │   │
+│   │   ├── Baseline/                 # Baseline model results
+│   │   │   ├── baseline_comparison.png
+│   │   │   ├── baseline_results.csv
+│   │   │   ├── best_baseline_confusion_matrix.png
+│   │   │   └── my_results.png
+│   │   │
+│   │   └── BERT/                     # BERT model results
+│   │       ├── baseline_vs_bert.png
+│   │       ├── confusion_matrix.png
+│   │       ├── final_comparison.csv
+│   │       └── training_history.png
 │   │
-│   └── image_classification/
+│   └── image_classification/         # Image classification results
 │       ├── confusion_matrix.png
 │       ├── roc_curve.png
 │       ├── precision_recall_curve.png
 │       ├── per_class_metrics.png
 │       ├── error_distribution.png
 │       ├── confidence_analysis.png
+│       ├── training_history_fast.png
 │       └── evaluation_summary.txt
-│
-├── src/                               # Source code modules
-│   ├── text_classifier.py            # Text analysis module
-│   ├── image_classifier.py           # Image analysis module
-│   ├── multimodal_fusion.py          # Fusion algorithm (planned)
-│   └── chatbot.py                    # Gradio chatbot interface
 │
 └── requirements.txt                   # Python dependencies
 
@@ -331,15 +341,15 @@ print(f"Confidence: {result['confidence']:.1f}%")
 
 **Training Curves:**
 
-![BERT Training History](results/text_classification/bert/training_history.png)
+![BERT Training History](results/text_classification/BERT/training_history.png)
 
 **Performance Comparison:**
 
-![Baseline vs BERT](results/text_classification/bert/baseline_vs_bert.png)
+![Baseline vs BERT](results/text_classification/BERT/baseline_vs_bert.png)
 
 **Confusion Matrix:**
 
-![Confusion Matrix](results/text_classification/bert/confusion_matrix.png)
+![Confusion Matrix](results/text_classification/Bert/confusion_matrix.png)
 
 ### Image Classification
 
