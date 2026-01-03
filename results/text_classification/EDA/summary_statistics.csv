@@ -1,0 +1,9 @@
+Metric,Value
+Total Samples,"45,414"
+Real News,"25,802"
+Fake News,"19,612"
+Avg. Title Length (chars),45.5
+Avg. Word Count,8.1
+Min Title Length,11
+Max Title Length,470
+Median Word Count,7.0
