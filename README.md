@@ -349,7 +349,7 @@ print(f"Confidence: {result['confidence']:.1f}%")
 
 **Confusion Matrix:**
 
-![Confusion Matrix](results/text_classification/Bert/confusion_matrix.png)
+![Confusion Matrix](results/text_classification/BERT/confusion_matrix.png)
 
 ### Image Classification
 
