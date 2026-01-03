@@ -82,43 +82,50 @@ Then open the Gradio interface in your browser!
 
 ```
 TruthLens-AI/
+├── docs/                              # Documentation and reports
+│   ├── Final_Project_Report.pdf      # Complete academic report
+│   ├── SETUP.md                       # Installation guide
+│   └── USAGE.md                       # Usage instructions
 │
-├── notebooks/
-│   ├── text_classification/
+├── notebooks/                         # Jupyter notebooks
+│   ├── text_classification/          # Text analysis pipeline
 │   │   ├── 01_EDA_visualizations.ipynb
 │   │   ├── 02_Baseline_Model_Training.ipynb
 │   │   ├── 03_BERT_Training.ipynb
 │   │   ├── 04_Fakeddit_Setup.ipynb
 │   │   └── 05_TruthLens_Chatbot.ipynb
 │   │
-│   └── image_classification/
-│       └── image_classification.ipynb  ← Your ONE notebook (all phases)
+│   └── image_classification/         # Image analysis pipeline
+│       ├── image_classification.ipynb
 │
-├── models/
+├── models/                            # Trained model files
 │   ├── text_models/
-│   │   ├── bert_best_model.pt
-│   │   ├── linear_svm_model.pkl
-│   │   ├── random_forest_model.pkl
-│   │   ├── naive_bayes_model.pkl
-│   │   └── logistic_regression_model.pkl
+│   │   ├── linear_svm_model.pkl      # SVM baseline 
+│   │   ├── naive_bayes_model.pkl     # Naive Bayes baseline 
+│   │   └── logistic_regression_model.pkl  # Logistic Regression 
 │   │
-│   └── image_models/
-│       └── best_efficientnet_cifake_fast.pth  ← Your trained model
+│   ├── image_models/
+│   │   └── best_efficientnet_cifake_fast.pth  # EfficientNet 
 │
-└── results/
-    ├── text_classification/
-    │   ├── eda/
-    │   ├── baseline/
-    │   └── bert/
-    │
-    └── image_classification/          ← Your Phase 3 results
-        ├── confusion_matrix.png
-        ├── roc_curve.png
-        ├── precision_recall_curve.png
-        ├── per_class_metrics.png
-        ├── error_distribution.png
-        ├── confidence_analysis.png
-        └── evaluation_summary.txt
+│   Note: Large models (BERT 438MB, Random Forest 244MB) available via Google Drive
+│   See "Model Downloads" section below
+│
+├── results/                           # Training and evaluation results
+│   ├── text_classification/
+│   │   ├── eda/                      # Exploratory data analysis
+│   │   ├── baseline/                 # Baseline model results
+│   │   └── bert/                     # BERT model results
+│   │
+│   └── image_classification/
+│       ├── confusion_matrix.png
+│       ├── roc_curve.png
+│       ├── precision_recall_curve.png
+│       ├── per_class_metrics.png
+│       ├── error_distribution.png
+│       ├── confidence_analysis.png
+│       └── evaluation_summary.txt
+│
+└── requirements.txt                   # Python dependencies
 ```
 
 ---
@@ -397,7 +404,38 @@ print(f"Confidence: {result['confidence']:.1f}%")
 - **Classes:** Real (CIFAR-10), AI-Generated (Stable Diffusion)
 - **Citation:** Bird & Lotfi (2024)
 
-*Note: Datasets not included in repository due to size. See [dataset_info.md](docs/dataset_info.md) for download instructions.*
+*Note: Datasets not included in repository due to size. See [docs/dataset_info.md](docs/dataset_info.md) for download instructions.*
+
+---
+
+## 📥 Model Downloads
+
+Due to GitHub's file size limitations, large model files are hosted on Google Drive:
+
+### Required Models
+
+| Model | Size | Accuracy | Download | Destination |
+|-------|------|----------|----------|-------------|
+| **BERT Text Model** | 438 MB | 84.5% | 🔗 [Download](https://drive.google.com/file/d/1LDCPkeOLto4YC481aaW_nw4evSsiawxq/view?usp=sharing)
+
+### Optional Models
+
+| Model | Size | Accuracy | Download | Destination |
+|-------|------|----------|----------|-------------|
+| **Random Forest Baseline** | 244 MB | 73.6% | 🔗 [Download](https://drive.google.com/file/d/18PErcIudGhEgnme8z9a1mmqDwodphFQz/view?usp=sharing)
+
+### Included in Repository
+
+These models are already included (no download needed):
+- ✅ **EfficientNet-B0** (46.4 MB, 97.66% accuracy) - `models/image_models/`
+- ✅ **Linear SVM** (41 KB) - `models/text_models/`
+- ✅ **Naive Bayes** (161 KB) - `models/text_models/`
+- ✅ **Logistic Regression** (41 KB) - `models/text_models/`
+
+**After downloading:**
+1. Place downloaded files in the specified destination folders
+2. Verify file sizes match the table above
+3. Run verification script in [SETUP.md](docs/SETUP.md)
 
 ---
 
@@ -709,7 +747,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **For questions or collaboration:**
 - 📧 Email: [more.ab@northeastern.edu]
 - 💼 LinkedIn: [https://www.linkedin.com/in/abhijitmore1407/]
-- 🐙 GitHub: [@Abhijit1407](https://github.com/Abhijit1407)
+- 🐙 GitHub: [@YOUR_USERNAME](https://github.com/Abhijit1407)
 
 ---
 
