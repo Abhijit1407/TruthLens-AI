@@ -722,13 +722,14 @@ All evaluation notebooks are in `notebooks/` with detailed visualizations.
 If you use this work in your research, please cite:
 
 ```bibtex
-@misc{truthlens2025,
+@techreport{truthlens2025,
   title={TruthLens AI: Multimodal Fake News Detection using BERT and EfficientNet},
   author={More, Abhijit and Upadhyay, Kshama and Guo, Qiwei},
   year={2025},
-  institution={Northeastern University},
-  course={EAI6010 - Applications of AI},
-  note={Text: 84.5\% accuracy, Image: 97.66\% accuracy, ROC AUC: 0.9971}
+  institution={Northeastern University, College of Professional Studies},
+  type={Course Project Report},
+  number={EAI6010},
+  note={BERT text classifier: 84.5% accuracy (recall: 83.3%); EfficientNet image classifier: 97.66% accuracy (ROC AUC: 0.9971)}
 }
 ```
 
