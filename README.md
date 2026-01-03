@@ -82,59 +82,43 @@ Then open the Gradio interface in your browser!
 
 ```
 TruthLens-AI/
-├── docs/                              # Documentation and reports
-│   ├── Final_Project_Report.pdf      # Complete academic report
-│   ├── SETUP.md                       # Installation guide
-│   └── USAGE.md                       # Usage instructions
 │
-├── notebooks/                         # Jupyter notebooks
-│   ├── text_classification/          # Text analysis pipeline
+├── notebooks/
+│   ├── text_classification/
 │   │   ├── 01_EDA_visualizations.ipynb
 │   │   ├── 02_Baseline_Model_Training.ipynb
 │   │   ├── 03_BERT_Training.ipynb
 │   │   ├── 04_Fakeddit_Setup.ipynb
 │   │   └── 05_TruthLens_Chatbot.ipynb
 │   │
-│   └── image_classification/         # Image analysis pipeline
-│       ├── 01_CIFAKE_Dataset_Preparation.ipynb
-│       ├── 02_EfficientNet_Training.ipynb
-│       └── 03_Model_Evaluation.ipynb
+│   └── image_classification/
+│       └── Image_Classification_Complete.ipynb  ← Your ONE notebook (all phases)
 │
-├── models/                            # Trained model files
+├── models/
 │   ├── text_models/
-│   │   ├── bert_best_model.pt        # BERT (84.5% accuracy)
-│   │   ├── linear_svm_model.pkl      # SVM baseline
-│   │   ├── random_forest_model.pkl   # Random Forest baseline
-│   │   ├── naive_bayes_model.pkl     # Naive Bayes baseline
+│   │   ├── bert_best_model.pt
+│   │   ├── linear_svm_model.pkl
+│   │   ├── random_forest_model.pkl
+│   │   ├── naive_bayes_model.pkl
 │   │   └── logistic_regression_model.pkl
 │   │
-│   ├── image_models/
-│   │   └── best_efficientnet_cifake_fast.pth  # EfficientNet (97.66%)
-│   │
-│   └── model_info.json               # Model metadata
+│   └── image_models/
+│       └── best_efficientnet_cifake_fast.pth  ← Your trained model
 │
-├── results/                           # Training and evaluation results
-│   ├── text_classification/
-│   │   ├── eda/                      # Exploratory data analysis
-│   │   ├── baseline/                 # Baseline model results
-│   │   └── bert/                     # BERT model results
-│   │
-│   └── image_classification/
-│       ├── confusion_matrix.png
-│       ├── roc_curve.png
-│       ├── precision_recall_curve.png
-│       ├── per_class_metrics.png
-│       ├── error_distribution.png
-│       ├── confidence_analysis.png
-│       └── evaluation_summary.txt
-│
-├── src/                               # Source code modules
-│   ├── text_classifier.py            # Text analysis module
-│   ├── image_classifier.py           # Image analysis module
-│   ├── multimodal_fusion.py          # Fusion algorithm (planned)
-│   └── chatbot.py                    # Gradio chatbot interface
-│
-└── requirements.txt                   # Python dependencies
+└── results/
+    ├── text_classification/
+    │   ├── eda/
+    │   ├── baseline/
+    │   └── bert/
+    │
+    └── image_classification/          ← Your Phase 3 results
+        ├── confusion_matrix.png
+        ├── roc_curve.png
+        ├── precision_recall_curve.png
+        ├── per_class_metrics.png
+        ├── error_distribution.png
+        ├── confidence_analysis.png
+        └── evaluation_summary.txt
 ```
 
 ---
