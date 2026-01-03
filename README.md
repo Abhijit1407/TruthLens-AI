@@ -720,7 +720,8 @@ All evaluation notebooks are in `notebooks/` with detailed visualizations.
 ## 📄 Citation
 
 If you use this work in your research, please cite:
-Citation Details:
+
+**Citation Details:**
 
 - Authors: Abhijit More, Kshama Upadhyay and Qiwei Guo
 - Title: TruthLens AI: Multimodal Fake News Detection using BERT and EfficientNet
