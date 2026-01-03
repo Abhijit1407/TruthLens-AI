@@ -92,7 +92,7 @@ TruthLens-AI/
 │   │   └── 05_TruthLens_Chatbot.ipynb
 │   │
 │   └── image_classification/
-│       └── Image_Classification_Complete.ipynb  ← Your ONE notebook (all phases)
+│       └── image_classification.ipynb  ← Your ONE notebook (all phases)
 │
 ├── models/
 │   ├── text_models/
