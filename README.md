@@ -583,7 +583,7 @@ False Positives: 202 (2.69% false alarm)
 
 **1. Clone Repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/TruthLens-AI.git
+git clone https://github.com/Abhijit1407/TruthLens-AI.git
 cd TruthLens-AI
 ```
 
@@ -768,7 +768,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **For questions or collaboration:**
 - 📧 Email: [more.ab@northeastern.edu]
 - 💼 LinkedIn: [https://www.linkedin.com/in/abhijitmore1407/]
-- 🐙 GitHub: [@YOUR_USERNAME](https://github.com/Abhijit1407)
+- 🐙 GitHub: [@Abhijit1407](https://github.com/Abhijit1407)
 
 ---
 
