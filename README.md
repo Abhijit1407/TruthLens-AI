@@ -428,21 +428,21 @@ Due to GitHub's file size limitations, large model files are hosted on Google Dr
 
 ### Required Models
 
-| Model | Size | Accuracy | Download | Destination |
-|-------|------|----------|----------|-------------|
+| Model | Size | Accuracy | Download | 
+|-------|------|----------|----------|
 | **BERT Text Model** | 438 MB | 84.5% | 🔗 [Download](https://drive.google.com/file/d/1LDCPkeOLto4YC481aaW_nw4evSsiawxq/view?usp=sharing)
 
 ### Required Models
 
-| Model | Size | Accuracy | Download | Destination |
-|-------|------|----------|----------|-------------|
+| Model | Size | Accuracy | Download | 
+|-------|------|----------|----------|
 | **EfficientNet Image Model** | 438 MB | 97.6% | 🔗 [Download](https://drive.google.com/file/d/1zkygAG0wrWfyZoxTNdQSs4pCmTaWtqtR/view?usp=sharing)
 
 
 ### Optional Models
 
-| Model | Size | Accuracy | Download | Destination |
-|-------|------|----------|----------|-------------|
+| Model | Size | Accuracy | Download | 
+|-------|------|----------|----------|
 | **Random Forest Baseline** | 244 MB | 73.6% | 🔗 [Download](https://drive.google.com/file/d/18PErcIudGhEgnme8z9a1mmqDwodphFQz/view?usp=sharing)
 
 ### Included in Repository
