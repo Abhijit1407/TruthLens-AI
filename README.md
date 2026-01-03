@@ -103,11 +103,8 @@ TruthLens-AI/
 │   │   ├── linear_svm_model.pkl      # SVM baseline 
 │   │   ├── naive_bayes_model.pkl     # Naive Bayes baseline 
 │   │   └── logistic_regression_model.pkl  # Logistic Regression 
-│   │
-│   ├── image_models/
-│   │   └── best_efficientnet_cifake_fast.pth  # EfficientNet 
 │
-│   Note: Large models (BERT 438MB, Random Forest 244MB) available via Google Drive
+│   Note: Large models (BERT, Random Forest and EfficientNet) available via Google Drive
 │   See "Model Downloads" section below
 │
 ├── results/                           # Training and evaluation results
@@ -125,7 +122,14 @@ TruthLens-AI/
 │       ├── confidence_analysis.png
 │       └── evaluation_summary.txt
 │
+├── src/                               # Source code modules
+│   ├── text_classifier.py            # Text analysis module
+│   ├── image_classifier.py           # Image analysis module
+│   ├── multimodal_fusion.py          # Fusion algorithm (planned)
+│   └── chatbot.py                    # Gradio chatbot interface
+│
 └── requirements.txt                   # Python dependencies
+
 ```
 
 ---
@@ -418,6 +422,13 @@ Due to GitHub's file size limitations, large model files are hosted on Google Dr
 |-------|------|----------|----------|-------------|
 | **BERT Text Model** | 438 MB | 84.5% | 🔗 [Download](https://drive.google.com/file/d/1LDCPkeOLto4YC481aaW_nw4evSsiawxq/view?usp=sharing)
 
+### Required Models
+
+| Model | Size | Accuracy | Download | Destination |
+|-------|------|----------|----------|-------------|
+| **EfficientNet Image Model** | 438 MB | 97.6% | 🔗 [Download](https://drive.google.com/file/d/1zkygAG0wrWfyZoxTNdQSs4pCmTaWtqtR/view?usp=sharing)
+
+
 ### Optional Models
 
 | Model | Size | Accuracy | Download | Destination |
@@ -583,7 +594,7 @@ Due to file size constraints, large models are hosted separately:
 
 - **BERT Model (417 MB):** [Download from Google Drive](https://drive.google.com/file/d/1LDCPkeOLto4YC481aaW_nw4evSsiawxq/view?usp=sharing)
 - **Random Forest (232 MB):** [Download from Google Drive](https://drive.google.com/file/d/18PErcIudGhEgnme8z9a1mmqDwodphFQz/view?usp=sharing)
-- **EfficientNet:** Included in repository (46.4 MB)
+- **EfficientNet:** [Download from Google Drive](https://drive.google.com/file/d/1zkygAG0wrWfyZoxTNdQSs4pCmTaWtqtR/view?usp=sharing)
 
 Place downloaded models in respective `models/` subdirectories.
 
