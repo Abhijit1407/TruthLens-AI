@@ -11,7 +11,7 @@
 
 ---
 
-## 📊 Performance Highlights
+## Performance Highlights
 
 | Component | Model | Accuracy | Key Metric | Status |
 |-----------|-------|----------|------------|--------|
@@ -20,14 +20,14 @@
 | **Baseline (SVM)** | Linear SVM | 75.7% | Recall: 63.3% | 📊 Comparison |
 
 **Key Achievements:**
-- 🎯 **20-point recall improvement** (63.3% → 83.3%) reducing missed fake news by 44%
-- 🖼️ **Near-perfect image detection** (ROC AUC: 0.9971) with only 2.34% error rate
-- ⚡ **Real-time inference** (<1 second response time)
-- 📈 **+11.6% improvement** over traditional ML baselines
+- **20-point recall improvement** (63.3% → 83.3%) reducing missed fake news by 44%
+- **Near-perfect image detection** (ROC AUC: 0.9971) with only 2.34% error rate
+- **Real-time inference** (<1 second response time)
+- **+11.6% improvement** over traditional ML baselines
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -53,32 +53,32 @@ Then open the Gradio interface in your browser!
 
 ---
 
-## 💡 Features
+## Features
 
 ### Text Analysis (Production)
-- ✅ BERT-based fake news detection
-- ✅ Detects clickbait and sensational language
-- ✅ Identifies emotional manipulation tactics
-- ✅ Real-time confidence scoring
-- ✅ Detailed pattern explanations
+- BERT-based fake news detection
+- Detects clickbait and sensational language
+- Identifies emotional manipulation tactics
+- Real-time confidence scoring
+- Detailed pattern explanations
 
 ### Image Analysis (Research Phase)
-- 🔬 AI-generated image detection
-- 🔬 97.66% accuracy on CIFAKE dataset
-- 🔬 Near-perfect ROC AUC (0.9971)
-- 🔬 Balanced real vs. synthetic detection
-- 🔬 Production deployment planned (Phase 2)
+- AI-generated image detection
+- 97.66% accuracy on CIFAKE dataset
+- Near-perfect ROC AUC (0.9971)
+- Balanced real vs. synthetic detection
+- Production deployment planned (Phase 2)
 
 ### Interactive Chatbot
-- 💬 Conversational AI interface
-- 📝 Natural language interaction
-- 🎯 Sample headlines for testing
-- 📊 Visual confidence displays
-- ❓ Built-in help system
+- Conversational AI interface
+- Natural language interaction
+- Sample headlines for testing
+- Visual confidence displays
+- Built-in help system
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 TruthLens-AI/
@@ -144,7 +144,7 @@ TruthLens-AI/
 
 ---
 
-## 🎯 System Architecture
+## System Architecture
 
 ### Current Implementation (Text-Only)
 
@@ -168,7 +168,7 @@ User Input (Text Headline)
 ```
 User Input
     ↓
-Text + Image
+   Text   +  Image
     ↓         ↓
   BERT    EfficientNet
  (84.5%)   (97.66%)
@@ -182,7 +182,7 @@ Confidence Weighted Fusion
 
 ---
 
-## 🧠 Models & Performance
+## Models & Performance
 
 ### Text Classification (BERT)
 
@@ -249,11 +249,11 @@ python src/chatbot.py
 ```
 
 **Features:**
-- 💬 Natural conversational interface
-- 📝 Analyze news headlines in real-time
-- 🎯 Pre-loaded sample headlines
-- 📊 Confidence visualizations
-- ❓ Built-in help and guidance
+- Natural conversational interface
+- Analyze news headlines in real-time
+- Pre-loaded sample headlines
+- Confidence visualizations
+- Built-in help and guidance
 
 **Sample Interaction:**
 ```
@@ -297,7 +297,7 @@ print(f"Confidence: {result['confidence']:.1f}%")
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 - **[Setup Guide](docs/SETUP.md)** - Detailed installation instructions
 - **[Usage Guide](docs/USAGE.md)** - How to use the system
@@ -305,7 +305,7 @@ print(f"Confidence: {result['confidence']:.1f}%")
 
 ---
 
-## 🔬 Research Highlights
+## Research Highlights
 
 ### Key Findings
 
@@ -335,7 +335,7 @@ print(f"Confidence: {result['confidence']:.1f}%")
 
 ---
 
-## 📈 Results Visualization
+## Results Visualization
 
 ### Text Classification
 
@@ -367,7 +367,7 @@ print(f"Confidence: {result['confidence']:.1f}%")
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 **Frameworks & Libraries:**
 - PyTorch 2.0+
@@ -422,7 +422,7 @@ print(f"Confidence: {result['confidence']:.1f}%")
 
 ---
 
-## 📥 Model Downloads
+## Model Downloads
 
 Due to GitHub's file size limitations, large model files are hosted on Google Drive:
 
@@ -448,10 +448,10 @@ Due to GitHub's file size limitations, large model files are hosted on Google Dr
 ### Included in Repository
 
 These models are already included (no download needed):
-- ✅ **EfficientNet-B0** (46.4 MB, 97.66% accuracy) - `models/image_models/`
-- ✅ **Linear SVM** (41 KB) - `models/text_models/`
-- ✅ **Naive Bayes** (161 KB) - `models/text_models/`
-- ✅ **Logistic Regression** (41 KB) - `models/text_models/`
+- **EfficientNet-B0** (46.4 MB, 97.66% accuracy) - `models/image_models/`
+- **Linear SVM** (41 KB) - `models/text_models/`
+- **Naive Bayes** (161 KB) - `models/text_models/`
+- **Logistic Regression** (41 KB) - `models/text_models/`
 
 **After downloading:**
 1. Place downloaded files in the specified destination folders
@@ -460,16 +460,16 @@ These models are already included (no download needed):
 
 ---
 
-## 🔑 Key Features
+## Key Features
 
-### ✅ Production-Ready (Deployed)
+### Production-Ready (Deployed)
 - **TruthLens AI Chatbot:** Conversational interface for headline analysis
 - **Real-time Processing:** <1 second inference time
 - **Explainability:** Detailed reasoning and pattern detection
 - **Confidence Scoring:** Percentage-based reliability indicators
 - **Sample Testing:** Pre-loaded examples for instant demo
 
-### 🔬 Research Validated (Phase 2 Deployment)
+### Research Validated (Phase 2 Deployment)
 - **Image Classification:** 97.66% accuracy on synthetic image detection
 - **Multimodal Fusion:** Confidence-weighted algorithm designed
 - **Comprehensive Evaluation:** ROC curves, confusion matrices, error analysis
@@ -477,7 +477,7 @@ These models are already included (no download needed):
 
 ---
 
-## 📊 Detailed Results
+## Detailed Results
 
 ### Text Classification Metrics
 
@@ -530,9 +530,9 @@ False Positives: 202 (2.69% false alarm)
 
 ---
 
-## 🚦 Project Status
+## Project Status
 
-### ✅ Completed
+### Completed
 - [x] Comprehensive baseline evaluation (4 ML models)
 - [x] BERT text classifier training and validation
 - [x] EfficientNet image classifier training and evaluation
@@ -540,13 +540,13 @@ False Positives: 202 (2.69% false alarm)
 - [x] Complete academic report with market analysis
 - [x] Production-ready inference pipeline
 
-### 🔄 In Progress
+### In Progress
 - [ ] High-resolution image dataset training
 - [ ] Multimodal fusion implementation
 - [ ] Real-world social media validation
 - [ ] Adversarial robustness testing
 
-### 📅 Planned (Phase 2)
+### Planned (Phase 2)
 - [ ] Complete multimodal integration
 - [ ] Image upload in chatbot interface
 - [ ] Advanced fusion algorithms (attention-based)
@@ -555,7 +555,7 @@ False Positives: 202 (2.69% false alarm)
 
 ---
 
-## 💼 Business Impact
+## Business Impact
 
 ### Market Opportunity
 - **Total Addressable Market:** $600-900M annually
@@ -626,7 +626,7 @@ For detailed troubleshooting, see [docs/SETUP.md](docs/SETUP.md).
 
 ---
 
-## 📖 Usage Examples
+## Usage Examples
 
 ### Command Line Interface
 
@@ -685,7 +685,7 @@ python src/chatbot.py
 
 ---
 
-## 🧪 Reproducibility
+## Reproducibility
 
 ### Training from Scratch
 
@@ -734,7 +734,7 @@ If you use this work in your research, please cite:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
@@ -747,13 +747,13 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Datasets:** Fakeddit (Yang & Shu, 2020), CIFAKE (Bird & Lotfi, 2024)
 - **Frameworks:** PyTorch, Transformers (HuggingFace), Gradio
@@ -763,16 +763,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Contact
+## Contact
 
 **For questions or collaboration:**
-- 📧 Email: [more.ab@northeastern.edu]
-- 💼 LinkedIn: [https://www.linkedin.com/in/abhijitmore1407/]
-- 🐙 GitHub: [@Abhijit1407](https://github.com/Abhijit1407)
+- Email: [more.ab@northeastern.edu]
+- LinkedIn: [https://www.linkedin.com/in/abhijitmore1407/]
+- GitHub: [@Abhijit1407](https://github.com/Abhijit1407)
 
 ---
 
-## ⭐ Star This Repository!
+## Star This Repository!
 
 If you found this project helpful, please give it a star! It helps others discover this work.
 
@@ -788,7 +788,7 @@ If you found this project helpful, please give it a star! It helps others discov
 
 ---
 
-## 📊 Repository Stats
+## Repository Stats
 
 ![Code Size](https://img.shields.io/github/languages/code-size/Abhijit1407/TruthLens-AI)
 ![Last Commit](https://img.shields.io/github/last-commit/Abhijit1407/TruthLens-AI)
